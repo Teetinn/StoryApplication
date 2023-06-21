@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity.StoryActivity">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:layout_margin="10dp"
+            android:id="@+id/button_logout"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Add Story"
+            android:layout_margin="10dp"
+            android:id="@+id/button_add_story"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="View Maps"
+            android:layout_margin="10dp"
+            android:id="@+id/button_maps"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStory"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvStoryName"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"/>-->
+
+
+
+</LinearLayout>
